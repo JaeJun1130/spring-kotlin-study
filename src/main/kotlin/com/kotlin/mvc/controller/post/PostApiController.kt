@@ -17,8 +17,8 @@ class PostApiController {
         return "post-request-mapping"
     }
 
-    @RequestMapping("/post-mapping/object")
-    fun queryParamObject(@RequestBody userRequest: UserRequest): UserRequest {
+    @PostMapping("/post-mapping/object")
+    fun postMappingObject(@RequestBody userRequest: UserRequest): UserRequest {
         println(userRequest)
         return userRequest
     }
